@@ -31,7 +31,6 @@ public class AWSS3Config {
 
     @Bean
     public AmazonS3 amazonS3() {
-
         AmazonS3 s3client = AmazonS3ClientBuilder.standard()
                 .withCredentials(new AWSStaticCredentialsProvider(credentials())).withRegion(region).build();
         return s3client;

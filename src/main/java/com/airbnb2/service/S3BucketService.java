@@ -38,8 +38,6 @@ public class S3BucketService {
             } catch (AmazonS3Exception s3Exception) {
                 return "Unable to upload file :" + s3Exception.getMessage();
             }
-
-
         } catch (Exception e) {
             throw new IllegalStateException("Failed to upload file", e);
         }

@@ -20,7 +20,6 @@ public class BookingController {
 
     private BookingService bookingService;
     private S3BucketService bucketService;
-
     private TwillioSmsService smsService;
 
     public BookingController(BookingService bookingService, S3BucketService bucketService, TwillioSmsService smsService) {
